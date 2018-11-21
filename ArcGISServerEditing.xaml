@@ -1,0 +1,197 @@
+﻿<Activity mc:Ignorable="sads sap sap2010" x:Class="{x:Null}" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:eac="clr-namespace:ESRI.ArcGIS.Client;assembly=ESRI.ArcGIS.Client"
+ xmlns:eacg="clr-namespace:ESRI.ArcGIS.Client.Geometry;assembly=ESRI.ArcGIS.Client"
+ xmlns:eact="clr-namespace:ESRI.ArcGIS.Client.Tasks;assembly=ESRI.ArcGIS.Client"
+ xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+ xmlns:gce="clr-namespace:Geocortex.Core.Extensions;assembly=Geocortex.Core"
+ xmlns:gfc="clr-namespace:Geocortex.Forms.Client;assembly=Geocortex.EssentialsWpfApi"
+ xmlns:gfci="clr-namespace:Geocortex.Forms.Client.Items;assembly=Geocortex.EssentialsWpfApi"
+ xmlns:gr="clr-namespace:Geocortex.Reporting;assembly=Geocortex.Reporting"
+ xmlns:gwa="clr-namespace:Geocortex.Workflow.Activities;assembly=Geocortex.Workflow"
+ xmlns:gwa1="clr-namespace:Geocortex.Workflow.Activities;assembly=Geocortex.Workflow.Activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:System;assembly=System.Core"
+ xmlns:s1="clr-namespace:System;assembly=System"
+ xmlns:s2="clr-namespace:System;assembly=mscorlib"
+ xmlns:s3="clr-namespace:System;assembly=System.ServiceModel"
+ xmlns:s4="clr-namespace:System;assembly=System.Drawing.Design"
+ xmlns:s5="clr-namespace:System;assembly=System.Design"
+ xmlns:s6="clr-namespace:System;assembly=System.Web.Services"
+ xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Core"
+ xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System"
+ xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:sl="clr-namespace:System.Linq;assembly=System.Core"
+ xmlns:sw="clr-namespace:System.Windows;assembly=PresentationFramework"
+ xmlns:sw1="clr-namespace:System.Windows;assembly=WindowsBase"
+ xmlns:sw2="clr-namespace:System.Windows;assembly=PresentationCore"
+ xmlns:sw3="clr-namespace:System.Windows;assembly=UIAutomationTypes"
+ xmlns:swt="clr-namespace:System.Windows.Threading;assembly=WindowsBase"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>ESRI.ArcGIS.Client</x:String>
+      <x:String>ESRI.ArcGIS.Client.Geometry</x:String>
+      <x:String>ESRI.ArcGIS.Client.Tasks</x:String>
+      <x:String>ESRI.ArcGIS.Client.Symbols</x:String>
+      <x:String>ESRI.ArcGIS.Client.ValueConverters</x:String>
+      <x:String>ESRI.ArcGIS.Client.AdvancedSymbology</x:String>
+      <x:String>Geocortex.Core.Extensions</x:String>
+      <x:String>Geocortex.Forms.Client</x:String>
+      <x:String>Geocortex.Forms.Client.Items</x:String>
+      <x:String>Geocortex.Reporting</x:String>
+      <x:String>Geocortex.Workflow.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Windows</x:String>
+      <x:String>System.Windows.Threading</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>ESRI.ArcGIS.Client</AssemblyReference>
+      <AssemblyReference>Geocortex.Core</AssemblyReference>
+      <AssemblyReference>Geocortex.EssentialsWpfApi</AssemblyReference>
+      <AssemblyReference>Geocortex.Reporting</AssemblyReference>
+      <AssemblyReference>Geocortex.Workflow</AssemblyReference>
+      <AssemblyReference>Geocortex.Workflow.Activities</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Drawing.Design</AssemblyReference>
+      <AssemblyReference>System.Design</AssemblyReference>
+      <AssemblyReference>System.Web.Services</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>UIAutomationTypes</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Reactive.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="esri:FeatureSet" Name="featureSet1" />
+      <Variable x:TypeArguments="x:Int32" Name="objectID" />
+      <Variable x:TypeArguments="esri:FeatureSet" Name="featureSet2" />
+      <Variable x:TypeArguments="scg2:IList(esri:EditResultItem)" Name="addFeatResult" />
+      <Variable x:TypeArguments="scg2:IList(esri:EditResultItem)" Name="updFeatResult" />
+      <Variable x:TypeArguments="scg2:IList(x:Int32)" Name="delList" />
+      <Variable x:TypeArguments="scg2:IList(esri:EditResultItem)" Name="delFeatResult" />
+      <Variable x:TypeArguments="x:String" Default="http://agsdemos2.geocortex.com/arcgis/rest/services/LosAngelesCounty/LA_Editing/FeatureServer/0" Name="featureLayer" />
+      <Variable x:TypeArguments="x:String" Default="COMMENTS" Name="fieldName" />
+      <Variable x:TypeArguments="x:String" Default="SDE.DEFAULT" Name="gdbVersion" />
+    </Sequence.Variables>
+    <gwa1:Alert sap2010:WorkflowViewState.IdRef="Alert_2" Text="[&quot;Add Features: Adds features to an ArcGIS Server feature layer.&quot; + Environment.NewLine + &quot;Delete Features: Deletes features from an ArcGIS Server feature layer.&quot; + Environment.NewLine + &quot;Update Features: Updates existing features of an ArcGIS Server feature layer.&quot; + Environment.NewLine + Environment.NewLine + &quot;Supported from: Geocortex Essentials 3.8.&quot;]" Title="ArcGIS Server (Editing) Activities" />
+    <gwa1:Alert sap2010:WorkflowViewState.IdRef="Alert_3" Text="This sample workflow uses all three activities available for editing an ArcGIS Server Feature Service. The workflow creates a copy of an existing feature, updates the original feature's COMMENTS field, then deletes the original feature. At each step, you can view the feature's endpoint to observe the changes." Title="ArcGIS Server (Editing) Activities" />
+    <gwa1:QueryTask sap2010:WorkflowViewState.IdRef="QueryTask_1" OutFields="*" QueryServiceUrl="[featureLayer]" Results="[featureSet1]" ReturnGeometry="False" SpatialRelationship="esriSpatialRelIntersects" Where="1=1" />
+    <gwa1:Cast x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="Cast`1_1" To="[objectID]">
+      <gwa1:Cast.Value>
+        <InArgument x:TypeArguments="x:Object">[featureSet1.First.Attributes("OBJECTID")]</InArgument>
+      </gwa1:Cast.Value>
+    </gwa1:Cast>
+    <gwa1:Alert sap2010:WorkflowViewState.IdRef="Alert_1" Text="[&quot;Retrieving feature with OBJECTID: &quot; + objectID.toString + &quot;. A copy will be made and added to the feature layer.&quot;]" Title="Add Features" />
+    <gwa1:QueryTask sap2010:WorkflowViewState.IdRef="QueryTask_2" OutFields="*" QueryServiceUrl="[featureLayer]" Results="[featureSet2]" SpatialRelationship="esriSpatialRelIntersects" Where="[&quot;OBJECTID IN (&quot; + featureSet1.First.Attributes(&quot;OBJECTID&quot;).toString + &quot;)&quot;]" />
+    <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Object">[featureSet2.First.Attributes(fieldName)]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Object">["Copied Feature"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <gwa1:AddFeatures FeatureLayerUrl="[featureLayer]" Features="[featureSet2]" GdbVersion="[gdbVersion]" sap2010:WorkflowViewState.IdRef="AddFeatures_1" Results="[addFeatResult]" />
+    <gwa1:DisplayHyperlink HyperlinkText="Click here to confirm the new feature was created." sap2010:WorkflowViewState.IdRef="DisplayHyperlink_1" Message="[&quot;Result of Add Features activity: &quot; + addFeatResult.First.Success.ToString]" Target="_blank" Title="Add Feature: Result" Uri="[featureLayer + &quot;/&quot; + addFeatResult.First.ObjectID.toString()]" WorkflowContainerName="Default" />
+    <Assign sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Object">[featureSet2.First.Attributes("COMMENTS")]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Object">["Updated description."]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <gwa1:UpdateFeatures FeatureLayerUrl="[featureLayer]" Features="[featureSet2]" GdbVersion="[gdbVersion]" sap2010:WorkflowViewState.IdRef="UpdateFeatures_1" Results="[updFeatResult]" />
+    <gwa1:DisplayHyperlink HyperlinkText="[&quot;Click here to confirm that the original feature's &quot; + fieldName + &quot; has been changed to 'Updated description'.&quot;]" sap2010:WorkflowViewState.IdRef="DisplayHyperlink_2" Message="[&quot;Result of Update Features activity: &quot; + updFeatResult.First.Success.ToString]" Target="_blank" Title="Update Feature: Result" Uri="[featureLayer + &quot;/&quot; + featureSet2.First.Attributes(&quot;OBJECTID&quot;).toString]" WorkflowContainerName="Default" />
+    <gwa1:CreateList x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CreateList`1_1" Result="[delList]" />
+    <AddToCollection x:TypeArguments="x:Int32" Collection="[delList]" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[objectID]" />
+    <gwa1:DeleteFeatures FeatureLayerUrl="[featureLayer]" GdbVersion="[gdbVersion]" sap2010:WorkflowViewState.IdRef="DeleteFeatures_1" ObjectIDs="[delList]" Results="[delFeatResult]" />
+    <gwa1:DisplayHyperlink HyperlinkText="Click here to confirm that the copied feature was deleted." sap2010:WorkflowViewState.IdRef="DisplayHyperlink_3" Message="[&quot;Result of DeleteFeatures activity: &quot; + delFeatResult.First.Success.ToString]" Target="_blank" Title="Delete Feature: Result" Uri="[featureLayer + &quot;/&quot; + featureSet1.First.Attributes(&quot;OBJECTID&quot;).toString() + &quot;?f=pjson&quot;]" WorkflowContainerName="Default" />
+    <sads:DebugSymbol.Symbol>dzVDOlxVc2Vyc1xzc2Nod2VpZ2VydFxEZXNrdG9wXEFyY0dJU1NlcnZlckVkaXRpbmcueGFtbExaA4oBDgIBAWM0Y5UBAgEEZDRkPgIBA2U0ZUECAQJnBWf9AwIBWWgFaKYDAgFWaQVp3gECAU5qBW4RAgFKbwVv4gECAUZwBXCtAgIBP3EFeA4CATx5BXm3AQIBNXoFepIDAgEuewWCAQ4CASuDAQWDAb0BAgEkhAEFhAGABAIBHIUBBYUBdgIBGYYBBYYBkQECARSHAQWHAboBAgEMiAEFiAHMAwIBBWdAZ88DAgFbZ9YDZ/oDAgFaaEBo+AICAVho/wJoowMCAVdpTWlQAgFVabUBac8BAgFUaXppiQECAVNp1gFp2wECAVJpmQFpoAECAVFpYWlxAgFPbDBsWgIBTWpYamQCAUtvQG/KAQIBSG/RAW/fAQIBR3BNcFACAUVwngFwuAECAURwenCJAQIBQ3C/AXCqAgIBQnBhcHECAUB2MHZCAgE+czFzWgIBPXkneTcCATp5QXlQAgE5eaMBebQBAgE4eVx5agIBNnqcAXr0AQIBNHr8AXqEAgIBM3qGA3qPAwIBMnoqel4CATF6iwJ6oAICATB6pQJ67wICAS+AATCAAUgCAS19MX1bAgEsgwEqgwE6AgEpgwFEgwFTAgEogwGpAYMBugECASeDAV+DAW0CASWEAfABhAHLAgIBI4QB0wKEAdsCAgEihAH0A4QB/QMCASGEASqEAbIBAgEfhAHiAoQB+gICAR6EAf8ChAHdAwIBHYUBaIUBcwIBGoYBO4YBRgIBF4YBggGGAY4BAgEVhwEqhwE6AgEShwGmAYcBtwECARGHAZIBhwGdAQIBD4cBRocBVAIBDYgBpAGIAf4BAgELiAGGAogBjgICAQqIAcADiAHJAwIBCYgBKogBZgIBCIgBlQKIAa0CAgEHiAGyAogBqQMCAQY=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="Alert_2" sap:VirtualizedContainerService.HintSize="337,86" />
+      <sap2010:ViewStateData Id="Alert_3" sap:VirtualizedContainerService.HintSize="337,86" />
+      <sap2010:ViewStateData Id="QueryTask_1" sap:VirtualizedContainerService.HintSize="337,243" />
+      <sap2010:ViewStateData Id="Cast`1_1" sap:VirtualizedContainerService.HintSize="337,60" />
+      <sap2010:ViewStateData Id="Alert_1" sap:VirtualizedContainerService.HintSize="337,86">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="QueryTask_2" sap:VirtualizedContainerService.HintSize="337,243">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="337,60" />
+      <sap2010:ViewStateData Id="AddFeatures_1" sap:VirtualizedContainerService.HintSize="337,111">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="DisplayHyperlink_1" sap:VirtualizedContainerService.HintSize="337,243" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="337,60" />
+      <sap2010:ViewStateData Id="UpdateFeatures_1" sap:VirtualizedContainerService.HintSize="337,111">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="DisplayHyperlink_2" sap:VirtualizedContainerService.HintSize="337,243" />
+      <sap2010:ViewStateData Id="CreateList`1_1" sap:VirtualizedContainerService.HintSize="337,61" />
+      <sap2010:ViewStateData Id="AddToCollection`1_1" sap:VirtualizedContainerService.HintSize="337,22" />
+      <sap2010:ViewStateData Id="DeleteFeatures_1" sap:VirtualizedContainerService.HintSize="337,111">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="DisplayHyperlink_3" sap:VirtualizedContainerService.HintSize="337,243" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="359,2793">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg2:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg2:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="399,2873" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
